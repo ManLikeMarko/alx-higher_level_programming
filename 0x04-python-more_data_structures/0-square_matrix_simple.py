@@ -7,11 +7,15 @@ def square_matrix_simple(matrix=[]):
     Returns:
     squared matrix
     """
-    squared_matrix = []
+    result_matrix = []
+
     for row in matrix:
-        squared_row = []
+        result_row = []
+
         for element in row:
-            squared_element = element ** 2
-            squared_row.append(squared_element)
-            squared_matrix.append(squared_row)
-            return squared_matrix
+
+            result_row.append(element ** 2)
+
+            result_matrix.append(result_row)
+
+            return result_matrix
